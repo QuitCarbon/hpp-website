@@ -36,8 +36,8 @@ References:
 
 ## Access (so others can update the site)
 
-- Ensure collaborators have write access to this repo. In particular, add Cooper with at least write permission so they can push PRs.
-- Path: Repo → Settings → Collaborators and teams → Add people → invite Cooper's GitHub username.
+- Ensure collaborators have write access to this repo. In particular, add user with at least write permission so they can push PRs.
+- Path: Repo → Settings → Collaborators and teams → Add people → invite user's GitHub username.
 
 ## Troubleshooting
 
