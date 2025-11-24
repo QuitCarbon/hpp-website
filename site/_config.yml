@@ -1,0 +1,18 @@
+# Jekyll configuration for Home Power Planner website
+
+# Site settings
+title: Home Power Planner
+description: HomePowerPlanner.org placeholder site served by GitHub Pages
+url: https://www.homepowerplanner.org
+baseurl: "" # no subpath
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude development artifacts
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
