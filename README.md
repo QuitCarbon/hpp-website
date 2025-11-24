@@ -1,4 +1,4 @@
-# Home Power Planner website (GitHub Pages)
+# Home Power Planner website (GitHub Pages + Markdown/Jekyll)
 
 This repository publishes a simple static website to GitHub Pages at the custom domain:
 
@@ -8,17 +8,22 @@ The site content lives in the `site/` directory and is deployed by a GitHub Acti
 
 ## How it works
 
-- Static files: `site/` contains `index.html`, two sub‑pages, a minimal CSS file, and a `CNAME` file with the custom domain.
-- Deployment: `.github/workflows/deploy-pages.yml` uploads the `site/` folder and deploys it to GitHub Pages on every push to `main` (and via manual run).
-- No build step: this is a pure static site; no package manager is required.
+- Markdown first: pages are `.md` files under `site/` (e.g. `site/index.md`, `site/subpage-1.md`). A minimal Jekyll layout lives in `site/_layouts/` and configuration in `site/_config.yml`. Styling is in `site/assets/styles.css`. The custom domain is set by `site/CNAME`.
+- Deployment: GitHub Actions builds the site with Jekyll and deploys it to GitHub Pages on every push to `main` (and via manual run).
 
 ## Update the website
 
-1) Edit files under `site/` (e.g. `site/index.html`, `site/subpage-1.html`, `site/subpage-2.html`, `site/assets/styles.css`).
+1) Edit files under `site/` (e.g. `site/index.md`, `site/subpage-1.md`, `site/subpage-2.md`, `site/assets/styles.css`).
 2) Commit your changes on a branch and open a Pull Request.
 3) Merge to `main`. The Pages workflow will deploy automatically (see the Actions tab).
 
-Local preview: open `site/index.html` directly in your browser (double‑click) or serve locally with any static server.
+Local preview:
+
+```
+bundle install
+bundle exec jekyll serve --source site --livereload
+# then visit http://127.0.0.1:4000/
+```
 
 ## Custom domain and DNS
 
@@ -31,7 +36,7 @@ Local preview: open `site/index.html` directly in your browser (double‑click) 
   - Repo → Settings → Pages: ensure the custom domain is set to `www.homepowerplanner.org` and HTTPS is enabled.
 
 References:
-- Quickstart: https://docs.github.com/en/pages/quickstart
+- Jekyll on GitHub Pages: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll
 - Custom domains: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
 
 ## Access (so others can update the site)
@@ -41,6 +46,6 @@ References:
 
 ## Troubleshooting
 
-- Action didn’t run: confirm your commit landed on `main` or trigger the workflow manually (Actions → Deploy static site to GitHub Pages → Run workflow).
+- Action didn’t run: confirm your commit landed on `main` or trigger the workflow manually (Actions → Build and deploy Jekyll site to GitHub Pages → Run workflow).
 - Domain not resolving: wait for DNS propagation (can take up to 24 hours). Verify the `CNAME` record and Pages custom domain settings.
 - Mixed content/redirects: enable HTTPS in Pages settings after the certificate is issued.
