@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
+    {% if page.description or site.description %}
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    {% endif %}
+    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">HomePowerPlanner.org</div>
+        <nav>
+          <a href="{{ "/" | relative_url }}">Home</a>
+          <a href="{{ "/subpage-1/" | relative_url }}">Sub‑page 1</a>
+          <a href="{{ "/subpage-2/" | relative_url }}">Sub‑page 2</a>
+        </nav>
+      </header>
+
+      <main class="panel">
+        {{ content }}
+      </main>
+
+      <footer>
+        <p>
+          Custom domain: <strong>www.HomePowerPlanner.org</strong> • Hosted on GitHub Pages
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

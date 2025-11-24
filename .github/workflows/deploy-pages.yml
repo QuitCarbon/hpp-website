@@ -1,4 +1,4 @@
-name: Deploy static site to GitHub Pages
+name: Build and deploy Jekyll site to GitHub Pages
 
 on:
   push:
@@ -21,13 +21,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build site with Jekyll
+        run: bundle exec jekyll build --source site --destination _site
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
 
   deploy:
     needs: build
@@ -36,6 +45,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
