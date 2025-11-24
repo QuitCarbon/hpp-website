@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home Power Planner — Sub‑page 1
+title: Home Power Planner — Sub‑Page 1
 ---
 
 <span class="badge">Sub‑page</span>
