@@ -4,7 +4,7 @@ title: Home Power Planner — Hello World
 description: HomePowerPlanner.org placeholder site served by GitHub Pages
 ---
 
-<span class="badge">Hello World</span>
+<span class="badge">hello world</span>
 
 # Welcome to Home Power Planner
 
