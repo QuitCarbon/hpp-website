@@ -3,8 +3,7 @@ layout: default
 title: Home Power Planner — Hello World
 description: HomePowerPlanner.org placeholder site served by GitHub Pages
 ---
-
-<span class="badge">hello world</span>
+hello world
 
 # Welcome to Home Power Planner
 
@@ -14,5 +13,13 @@ This site is published from the repository `QuitCarbon/hpp-website` using GitHub
 
 Try the sub‑pages:
 
-- [Explore Sub‑page 1 →](/subpage-1/)
-- [Explore Sub‑page 2 →](/subpage-2/)
+*   [Explore Sub‑page 1 →](/subpage-1/)
+    
+*   [Explore Sub‑page 2 →](/subpage-2/)
+    
+
+Test edit
+
+| Column 1 | Column 2 |
+| --- | --- |
+| Test cell | Cell 1-2 |
