@@ -3,7 +3,6 @@ layout: default
 title: Home Power Planner
 description: HomePowerPlanner.org
 ---
-
 # Welcome to Home Power Planner
 
 ## Project Summary
@@ -13,9 +12,13 @@ With EPIC funding, our project team is creating an open-source, friendly tool - 
 ## Project Goals
 
 *   Develop a user-friendly, open-sourced, online power-efficient electrification tool
+    
 *   Collaborate with key stakeholders to improve the tool’s usability and capabilities.
+    
 *   Support homeowners in understanding their electrical panel capacity and ways to minimize the cost of electrification.
+    
 *   Develop a business model and commercialization plan for the tool.
+    
 
 ## The Issue
 
@@ -39,7 +42,8 @@ The Home Power Planner creates accessible electrification paths, helping disadva
 
 The Home Power Planner supports electrification, removing unvented combustion, improving indoor air quality, and advancing healthier, more sustainable communities.
 
-FIXME - correct these subpages:
+FIXME - correct these subpages one and two:
 
-*   [Explore Sub‑page 1 →](/subpage-1/)    
+*   [Explore Sub‑page 1 →](/subpage-1/)
+    
 *   [Explore Sub‑page 2 →](/subpage-2/)
