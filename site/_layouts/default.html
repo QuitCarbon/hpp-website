@@ -10,25 +10,29 @@
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="brand">HomePowerPlanner.org</div>
-        <nav>
-          <a href="{{ "/" | relative_url }}">Home</a>
-          <a href="{{ "/subpage-1/" | relative_url }}">Sub‑page 1</a>
-          <a href="{{ "/subpage-2/" | relative_url }}">Sub‑page 2</a>
-        </nav>
-      </header>
+    <!-- Navigation -->
+    <div class="nav">
+      <h1 class="logo"><a href="{{ "/" | relative_url }}">POWER Group</a></h1>
+      <a href="mailto:jlow@builditgreen.org?subject=Inquiry%3A%20Home%20Power%20Planner%20tool" class="contact-btn">Contact</a>
+    </div>
 
-      <main class="panel">
-        {{ content }}
-      </main>
+    {{ content }}
 
-      <footer>
-        <p>
-          Custom domain: <strong>www.HomePowerPlanner.org</strong> • Hosted on GitHub Pages
-        </p>
-      </footer>
+    <!-- Footer -->
+    <div class="footer">
+      <h1 class="logo"><a href="https://www.builditgreen.org/power" target="_blank">POWER Group</a></h1>
+      <div class="footer-contact">
+        <a href="mailto:Jenny@powerhomes.org">Jenny@powerhomes.org</a>
+        <a href="#">510-590-3360, Ext. 107</a>
+      </div>
+    </div>
+    <div class="footer-bottom" style="background: #0e2153; padding: 20px; text-align: center; color: white; font-family: 'SF Mono', monospace;">
+      <div>© 2025 POWER Group. All rights reserved.</div>
+      <div style="margin-top: 10px;">
+        <a href="#" style="color: white; margin: 0 10px;">Privacy Policy</a>
+        <a href="#" style="color: white; margin: 0 10px;">Terms of Use</a>
+        <span style="margin: 0 10px;">Cookie Policy</span>
+      </div>
     </div>
   </body>
 </html>
