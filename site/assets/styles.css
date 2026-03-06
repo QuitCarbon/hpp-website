@@ -29,7 +29,7 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 72px 75px 74px;
+  padding: 40px 72px 20px 74px;
   background: var(--bg);
 }
 
@@ -37,7 +37,7 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
   color: var(--text);
   cursor: pointer;
   min-width: 59px;
-  margin-top: 57px;
+  margin-top: 0;
   font-size: 2rem;
   font-weight: 600;
   font-family: 'Sora', sans-serif;
@@ -58,7 +58,7 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
   text-decoration: none;
   font-family: inherit;
   font-size: 0.9rem;
-  margin-top: 35px;
+  margin-top: 0;
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
@@ -75,7 +75,7 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 180px 76px 80px;
+  padding: 60px 76px 80px;
   background: var(--bg);
   align-items: center;
 }
@@ -83,7 +83,7 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
 .hero-content h1 {
   font-size: 35px;
   font-weight: 700;
-  margin-top: 100px;
+  margin-top: 0;
   margin-bottom: 10px;
   padding-right: 56px;
   line-height: 44px;
@@ -123,7 +123,7 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 /* Menu Links Section */
@@ -173,7 +173,7 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
 /* Project Summary Section - White card on blue background */
 .summary-wrapper {
   background: var(--bg);
-  padding: 33px 40px;
+  padding: 33px 40px 80px;
 }
 
 .summary-card {
@@ -336,18 +336,19 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
 .footer {
   background-color: #1a77ae;
   border-radius: 10px;
-  margin: 216px 20px 0;
+  margin: 60px 20px 0;
   padding: 30px;
   display: grid;
   grid-template-columns: 0.5fr 1fr;
+  align-items: center;
 }
 
 .footer .logo {
   color: var(--text);
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: -23px;
-  margin-bottom: -17px;
+  margin-top: 0;
+  margin-bottom: 0;
   min-width: 74px;
 }
 
