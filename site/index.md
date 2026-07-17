@@ -18,8 +18,8 @@ description: HomePowerPlanner.org
 
 <!-- Menu Links -->
 <div class="menu-section">
-  <a href="/subpage-1/" class="menu-link">Meet The Team</a>
-  <a href="/subpage-2/" class="menu-link">Project Updates & Files</a>
+  <a href="/meet-the-team/" class="menu-link">Meet The Team</a>
+  <a href="/project-updates-and-files/" class="menu-link">Project Updates & Files</a>
 </div>
 
 <!-- Project Summary -->
