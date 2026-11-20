@@ -419,10 +419,8 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
 
 /* Team Section (Meet The Team page) */
 .team-section {
-  background-color: var(--text);
-  border-radius: 10px;
   margin: 120px 40px 40px;
-  padding: 78px;
+  padding: 0;
 }
 
 .team-container {
@@ -434,26 +432,29 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
 .team-heading {
   text-align: center;
   margin-bottom: 16px;
-  color: var(--text-dark);
+  color: var(--text);
   font-family: 'Sora', sans-serif;
 }
 
 .team-grid {
   display: grid;
-  grid-column-gap: 64px;
-  grid-row-gap: 56px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+  place-items: stretch;
   margin-top: 50px;
 }
 
 .team-card {
+  background-color: var(--text);
+  border-radius: 10px;
   text-align: center;
   flex-direction: column;
   align-items: center;
   font-size: 14px;
   line-height: 22px;
   display: flex;
+  padding: 32px 24px;
 }
 
 .team-member-image {
@@ -653,12 +654,12 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
   
   .team-section {
     margin: 60px 20px 20px;
-    padding: 40px 20px;
+    padding: 0;
   }
-  
+
   .team-grid {
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 20px;
   }
   
   .updates-wrapper {
