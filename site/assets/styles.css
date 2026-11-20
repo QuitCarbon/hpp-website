@@ -49,6 +49,24 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
   text-decoration: none;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
 .contact-btn {
   padding: 9px 15px;
   background-color: var(--accent-orange);
@@ -552,14 +570,24 @@ img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block;
 /* Responsive */
 @media (max-width: 900px) {
   .nav {
+    flex-wrap: wrap;
     padding: 20px;
   }
-  
+
   .logo {
     margin-top: 20px;
     font-size: 1.2rem;
   }
-  
+
+  .nav-links {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
   .contact-btn {
     margin-top: 20px;
   }
