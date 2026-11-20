@@ -16,12 +16,6 @@ description: HomePowerPlanner.org
   </div>
 </div>
 
-<!-- Menu Links -->
-<div class="menu-section">
-  <a href="/meet-the-team/" class="menu-link">Meet The Team</a>
-  <a href="/project-updates-and-files/" class="menu-link">Project Updates & Files</a>
-</div>
-
 <!-- Project Summary -->
 <div class="summary-wrapper">
   <div class="summary-card">
