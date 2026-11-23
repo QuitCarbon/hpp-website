@@ -2,7 +2,11 @@
 layout: default
 title: Meet The Team — Home Power Planner
 ---
+<div class="team-section" markdown="1">
+<div class="team-container" markdown="1">
+
 ## Meet The Team
+{: .team-heading }
 
 <div class="team-grid">
   <!-- Jenny Low -->
@@ -75,4 +79,7 @@ title: Meet The Team — Home Power Planner
     <div class="team-member-name"><strong>Tom Kabat, Good Gridizen</strong></div>
     <a href="#" class="team-btn">Linkedin</a>
   </div>
+</div>
+
+</div>
 </div>
